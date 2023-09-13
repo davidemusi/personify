@@ -8,7 +8,7 @@ from flask_migrate import Migrate
 from werkzeug.exceptions import NotFound, MethodNotAllowed
 
 
-def create_app(config=config_dict['dev']):
+def create_app(config=config_dict['test']):
     app = Flask(__name__)
     app.config.from_object(config)
 
